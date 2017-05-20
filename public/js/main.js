@@ -1,6 +1,6 @@
 /* functions for general use */
 
-/*This function returns the value associate with 'whichParam' on the URL */
+/* This function returns the value associate with 'whichParam' on the URL */
 function getURLParameters(whichParam)
 {
 	var pageURL = window.location.search.substring(1);
@@ -18,4 +18,4 @@ if('undefined' == typeof username || !username){
 	username = 'Anonymous_'+Math.random();
 }
 
-$('#messages').append('<h4>'+'username'+'</h4>');
+$('#messages').append('<h4>'+username+'</h4>');
