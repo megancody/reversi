@@ -48,7 +48,7 @@ socket.on('send_message_response',function(payload){
 });
 
 function send_message(){
-	var parload = {};
+	var payload = {};
 	payload.room = chat_room;
 	payload.username = username;
 	payload.message = $('#send_message_holder').val();
